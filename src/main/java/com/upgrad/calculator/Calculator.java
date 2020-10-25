@@ -15,9 +15,9 @@ public class Calculator {
 
     public int compute(String op, int x, int y){
         if (op.equals("add")) {
-            return x+y;
+            return this.additionService.operate(x,y);
         } else if (op.equals("sub")) {
-            return x-y;
+            return this.subtractionService.operate(x,y);
         }
         else
             throw new RuntimeException(op+"not found");
